@@ -1,6 +1,7 @@
 name: Run SBOM manifests validation test
 
 on:
+  workflow_dispatch:
   pull_request:
     types: [opened, reopened, synchronize]
 
