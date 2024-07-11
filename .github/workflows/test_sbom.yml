@@ -14,4 +14,5 @@ jobs:
       - run: |
           git config --global safe.directory $(pwd)
           pip install git+https://github.com/fhrbata/esp-idf-sbom.git@fix/pyparsing_version
+          python3 --version
           python3 -m esp_idf_sbom manifest validate
